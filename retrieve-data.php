@@ -33,9 +33,9 @@
 
         echo json_encode($data);
 
-    } catch(PDOException $e)
-   {
+    } catch(PDOException $e){
+      
       echo $e->getMessage();
-   }
+    }
             
 ?>

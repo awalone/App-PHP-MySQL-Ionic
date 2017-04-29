@@ -44,7 +44,7 @@
                 
                 echo json_decode(['message' => 'Ponto turístico '.$name.' cadastrado!']);
 
-            } catch(PDOExeption $e ){
+            } catch(PDOException $e ){
                     echo $e->getMessage();
             }
 
@@ -72,7 +72,7 @@
                 
                 echo json_decode('Ponto turístico '.$name.' atualizado!');
 
-            } catch(PDOExeption $e ){
+            } catch(PDOException $e ){
                     echo $e->getMessage();
             }
 
@@ -92,7 +92,7 @@
 
                 echo json_decode('Ponto turístico '.$name.' removido!');
 
-            } catch(PDOExeption $e ){
+            } catch(PDOException $e ){
                     echo $e->getMessage();
             }
             break;
